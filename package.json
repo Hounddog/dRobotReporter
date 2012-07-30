@@ -1,0 +1,11 @@
+{
+  "name": "dRobotReporter",
+  "description": ".O.H Robot Server Reporter to enable starting the robot from commandline within a browser",
+  "author": "Martin Shwalbe <martin.shwalbe@gmail.com",
+  "version": "0.0.1",
+  "dependencies": {
+    "commander": ">= 1.0.0",
+    "socket.io": ">= 0.9.8"
+  },
+  "engine": "node 0.6.19"
+}
