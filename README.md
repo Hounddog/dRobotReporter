@@ -3,9 +3,7 @@ This project provides widgets for lists of data, including simple sets of scroll
 The dRobotReporter project is available under the same dual BSD/AFLv2 license as the Dojo Toolkit.
 Installation
 
-Manual Download
-
-Alternatively, dRobotReport and its dependencies can be downloaded individually:
+Manual installation
 	The Dojo Toolkit SDK version 1.7
 
 It is recommended to arrange all dependencies as siblings, resulting in a directory structure like the following:
@@ -20,3 +18,7 @@ Node.js Dependencies
     socket.io >= 0.9.8"
 
 dRobotReport works best with Dojo 1.7.1 or higher. As of this writing, Dojo 1.7.2 is recommended.
+
+Usage
+
+node runner.js -m module.to.test -u http://test.url -b iceweasel -B /path/to/dojo -M myWidget,/path/to/dojo/myWidget -s http://runner.server

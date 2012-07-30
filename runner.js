@@ -148,10 +148,10 @@ function createUrl () {
 
   var url=  program.url + runner + '?testModule=' + program.module;
   if(program.modulePath) {
-    url +=  '&registerModulePath=' + program.modulePath;
+    url +=  '&registerModulePath=dRobotReporter,' + program.basePath + '/dRobotReporter;' + program.modulePath;
   }
 
-  url += '&dohPlugins=widget/doh/node&port=' + program.port + '&server=' + program.server + '&browser=' + program.browser;
+  url += '&dohPlugins=dRobotReporter/connector&port=' + program.port + '&server=' + program.server + '&browser=' + program.browser;
   
   return url;
 }
