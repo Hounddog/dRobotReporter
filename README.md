@@ -15,7 +15,7 @@ It is recommended to arrange all dependencies as siblings, resulting in a direct
 Node.js Dependencies
 	node.js >= 0.6.9
 	commander >= 1.0.0
-    socket.io >= 0.9.8"
+	socket.io >= 0.9.8"
 
 dRobotReport works best with Dojo 1.7.1 or higher. As of this writing, Dojo 1.7.2 is recommended.
 
@@ -29,5 +29,7 @@ Usage
 	-p, --port <int> Specify the port defaults to 8000
 	-a, --no-auto Auto Start browser, defaults to true
 	-b, --browser [string] Specify Browser for testing [e.g. firefox]. Required if autostart is enabled
-	
-node runner.js -m module.to.test -u http://test.url -b iceweasel -B /path/to/dojo -M myWidget,/path/to/dojo/myWidget -s http://runner.server
+
+Example
+
+	node runner.js -m module.to.test -u http://test.url -b iceweasel -B /path/to/dojo -M myWidget,/path/to/dojo/myWidget -s http://runner.server
