@@ -21,11 +21,12 @@ dRobotReport works best with Dojo 1.7.1 or higher. As of this writing, Dojo 1.7.
 
 Usage
 
-	-u, --url [string]', 'Add the url to connect to [required]')
-	-B, --base-path [string]', 'Specify Dojo BasePath')
-	-m, --module [string]', 'Specify Module for testing')
-	-M, --module-path [string]', 'Specify Module Paths')
-	-s, --server [string]', 'Specify server url for nodeJs runner. If not set will deault to url [--url]
+	-u, --url [string], Add the url to connect to [required]
+	-B, --base-path [string], Specify Dojo BasePath
+	-m, --module [string], Specify Module for testing
+	-M, --module-path [string], Specify Module Paths
+	-P, --plugins [string], Specify plugins seperated by semikolon e.g. [plugin1;plugin2]
+	-s, --server [string], Specify server url for nodeJs runner. If not set will deault to url [--url]
 	-p, --port <int> Specify the port defaults to 8000
 	-a, --no-auto Auto Start browser, defaults to true
 	-b, --browser [string] Specify Browser for testing [e.g. firefox]. Required if autostart is enabled
