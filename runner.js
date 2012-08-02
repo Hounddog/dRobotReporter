@@ -12,6 +12,7 @@ program
   .option('-B, --base-path [type]', 'Specify Dojo BasePath')
   .option('-m, --module [type]', 'Specify Module for testing')
   .option('-M, --module-path [type]', 'Specify Module Paths')
+  .option('-P, --plugins <n>', 'Specify plugins seperated by semikolon e.g. [plugin1;plugin2]')
   .option('-s, --server [type]', 'Specify server url for nodeJs runner. If not set will deault to url [-url]')
   .option('-p, --port <n>', 'Specify the port [8000]', parseInt, 8000)
   .option('-a, --no-auto', 'Auto Start browser')
@@ -151,7 +152,11 @@ function createUrl () {
     url +=  '&registerModulePath=dRobotReporter,' + program.basePath + '/dRobotReporter;' + program.modulePath;
   }
 
-  url += '&dohPlugins=dRobotReporter/connector&port=' + program.port + '&server=' + program.server + '&browser=' + program.browser;
+  var dohPlugins = '&dohPlugins=dRobotReporter/connector';
+  if(program.plugins) {
+    dohPlugins += ';' + program.plugins;
+  }
+  url += dohPlugins + '&port=' + program.port + '&server=' + program.server + '&browser=' + program.browser;
   
   return url;
 }
